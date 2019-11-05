@@ -1,0 +1,35 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.nsqt",
+    "tns-android": {
+      "version": "6.1.2"
+    },
+    "tns-ios": {
+      "version": "6.1.0"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "@nativescript/core": "file:../NativeScript/nativescript-core/",
+    "nativescript-theme-core": "~1.0.6",
+    "tns-core-modules": "file:../NativeScript/tns-core-modules-package/"
+  },
+  "devDependencies": {
+    "nativescript-dev-webpack": "file:../nativescript-dev-webpack/",
+    "nativescript-worker-loader": "0.9.0",
+    "clean-webpack-plugin": "1.0.0",
+    "copy-webpack-plugin": "4.6.0",
+    "css-loader": "3.2.0",
+    "file-loader": "4.2.0",
+    "node-loader": "0.6.0",
+    "sass-loader": "8.0.0",
+    "sass": "1.23.3",
+    "webpack": "4.40.3",
+    "webpack-bundle-analyzer": "3.6.0",
+    "webpack-cli": "3.3.10"
+  },
+  "gitHead": "1964ea9e8ca1a0518e0d6370781eedcf6c23db42",
+  "readme": "NativeScript Application"
+}

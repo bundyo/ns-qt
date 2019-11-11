@@ -10,7 +10,8 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 The imported CSS rules must precede all other types of rules.
 */
-@import '~@nativescript/theme/css/ruby.css';
+@import '~@nativescript/theme/css/core.css';
+@import '~@nativescript/theme/css/purple.css';
 
 /*
 The following CSS rule changes the font size of all UI
@@ -19,3 +20,27 @@ components that have the btn class name.
 .btn {
     font-size: 18;
 }
+
+.ns-root.ns-root Button {
+    margin: 3 10;
+    padding: 3 10;
+    color: red;
+    background-color: brown;
+    border: 5 blue;
+}
+
+.ns-root.ns-root Button:active {
+    background-color: green;
+}
+
+.ns-root.ns-root Progress {
+    padding: 10;
+    margin: 10;
+    color: white;
+    text-align: center;
+    desktop-chunk-color: violet;
+    desktop-chunk-width: 10;
+    background-color: darkslategray;
+    border: 3 red;
+}
+

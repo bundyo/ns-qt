@@ -10,7 +10,8 @@
     "debug": "qode --inspect-brk ./src/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "0.3.1"
+    "@nodegui/nodegui": "0.5.1",
+    "@nodegui/qode": "1.0.5"
   },
   "devDependencies": {
     "@types/node": "12.12.5",

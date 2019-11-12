@@ -21,26 +21,26 @@ components that have the btn class name.
     font-size: 18;
 }
 
-.ns-root.ns-root Button {
-    margin: 3 10;
-    padding: 3 10;
-    color: red;
-    background-color: brown;
-    border: 5 blue;
-}
+/*.ns-root.ns-root Button {*/
+/*    margin: 3 10;*/
+/*    padding: 3 10;*/
+/*    color: red;*/
+/*    background-color: brown;*/
+/*    border: 5 blue;*/
+/*}*/
 
-.ns-root.ns-root Button:active {
-    background-color: green;
-}
+/*.ns-root.ns-root Button:active {*/
+/*    background-color: green;*/
+/*}*/
 
-.ns-root.ns-root Progress {
-    padding: 10;
-    margin: 10;
-    color: white;
-    text-align: center;
-    desktop-chunk-color: violet;
-    desktop-chunk-width: 10;
-    background-color: darkslategray;
-    border: 3 red;
-}
+/*.ns-root.ns-root Progress {*/
+/*    padding: 10;*/
+/*    margin: 10;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    desktop-chunk-color: violet;*/
+/*    desktop-chunk-width: 10;*/
+/*    background-color: darkslategray;*/
+/*    border: 3 red;*/
+/*}*/
 

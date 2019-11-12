@@ -1,3 +1,5 @@
+const Frame = require("@nativescript/core/ui/frame").Frame;
+
 const Observable = require("@nativescript/core/data/observable").Observable;
 const ObservableArray = require("@nativescript/core/data/observable-array").ObservableArray;
 
@@ -27,6 +29,15 @@ function createViewModel() {
     viewModel.onTap = () => {
         viewModel.counter--;
         viewModel.set("message", getMessage(viewModel.counter));
+    };
+
+    viewModel.toButtons = () => {
+        Frame.topmost().navigate({
+            moduleName: `buttons`,
+            transition: {
+                name: "slide"
+            }
+        });
     };
 
     const items = new ObservableArray();

@@ -12,13 +12,11 @@ https://docs.nativescript.org/ui/components.
     The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
     http://docs.nativescript.org/ui/action-bar
     -->
-    <Page.actionBar>
-        <ActionBar title="My App">
-            <ActionItem>
-                <Button text="Theme" />
-            </ActionItem>
-        </ActionBar>
-    </Page.actionBar>
+    <ActionBar title="My App">
+        <ActionItem>
+            <Button text="Theme" tap="{{ toButtons }}" />
+        </ActionItem>
+    </ActionBar>
     <!--
     The StackLayout stacks UI components on the screen—either vertically or horizontally.
     In this case, the StackLayout does vertical stacking; you can change the stacking to
@@ -30,24 +28,26 @@ https://docs.nativescript.org/ui/components.
     core theme, such as p-20, btn, h2, and text-center. You can view a full list of the
     class names available for styling your app at https://docs.nativescript.org/ui/theme.
     -->
-    <StackLayout class="p-20">
-        <StackLayout orientation="horizontal" class="p-20">
+    <ScrollView>
+        <StackLayout class="p-20">
+            <StackLayout orientation="horizontal" class="p-20">
+                <Label text="Tap the button" class="h1 text-center"/>
+                <Button text="TAP" tap="{{ onTap }}" class="-primary"/>
+                <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            </StackLayout>
+            <Progress maxValue="200" value="50"/>
             <Label text="Tap the button" class="h1 text-center"/>
-            <Button text="TAP" tap="{{ onTap }}" class="-primary"/>
+            <Button text="TAP" tap="{{ onTap }}"/>
             <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Repeater items="{{ items }}">
+                <Repeater.itemsLayout>
+                    <StackLayout />
+                </Repeater.itemsLayout>
+                <Repeater.itemTemplate>
+                    <app:details-view title="{{ title }}" info="{{ info }}"/>
+                </Repeater.itemTemplate>
+            </Repeater>
+            <Label text="------------" class="h2 text-center" textWrap="true"/>
         </StackLayout>
-        <Progress maxValue="200" value="50"/>
-        <Label text="Tap the button" class="h1 text-center"/>
-        <Button text="TAP" tap="{{ onTap }}"/>
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
-        <Repeater items="{{ items }}">
-            <Repeater.itemsLayout>
-                <StackLayout />
-            </Repeater.itemsLayout>
-            <Repeater.itemTemplate>
-                <app:details-view title="{{ title }}" info="{{ info }}"/>
-            </Repeater.itemTemplate>
-        </Repeater>
-        <Label text="------------" class="h2 text-center" textWrap="true"/>
-    </StackLayout>
+    </ScrollView>
 </Page>

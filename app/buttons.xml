@@ -1,8 +1,8 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
       navigatingTo="navigatingTo">
     <ActionBar title="Buttons">
-        <ActionItem>
-            <Button text="Meme" tap="{{ goBack }}" />
+        <ActionItem position="left">
+            <Button text="Back" tap="{{ goBack }}" />
         </ActionItem>
     </ActionBar>
     <ScrollView>

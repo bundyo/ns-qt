@@ -14,7 +14,7 @@ https://docs.nativescript.org/ui/components.
     -->
     <ActionBar title="My App">
         <ActionItem>
-            <Button text="Theme" tap="{{ toButtons }}" />
+            <Button text="Buttons" tap="{{ toButtons }}" />
         </ActionItem>
     </ActionBar>
     <!--

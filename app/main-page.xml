@@ -30,7 +30,7 @@ https://docs.nativescript.org/ui/components.
     -->
     <ScrollView>
         <StackLayout class="p-20">
-            <StackLayout orientation="horizontal" class="p-20">
+            <StackLayout orientation="horizontal" class="p-20" style="background-color: red">
                 <Label text="Tap the button" class="h1 text-center"/>
                 <Button text="TAP" tap="{{ onTap }}" class="-primary"/>
                 <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
@@ -40,11 +40,9 @@ https://docs.nativescript.org/ui/components.
             <Button text="TAP" tap="{{ onTap }}"/>
             <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
             <Repeater items="{{ items }}">
-                <Repeater.itemsLayout>
-                    <StackLayout />
-                </Repeater.itemsLayout>
                 <Repeater.itemTemplate>
-                    <app:details-view title="{{ title }}" info="{{ info }}"/>
+                    <Button text="Test" class="detail-title"/>
+<!--                        <app:details-view title="{{ title }}" info="{{ info }}"/>-->
                 </Repeater.itemTemplate>
             </Repeater>
             <Label text="------------" class="h2 text-center" textWrap="true"/>

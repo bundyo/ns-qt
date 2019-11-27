@@ -10,16 +10,19 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 The imported CSS rules must precede all other types of rules.
 */
-@import '~@nativescript/theme/css/core.css';
-@import '~@nativescript/theme/css/purple.css';
+/*@import '~@nativescript/theme/css/core.css';*/
+/*@import '~@nativescript/theme/css/purple.css';*/
 
 /*
 The following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
-.btn {
+Button {
     font-size: 18;
+    min-width: 50;
 }
+
+
 
 /*.ns-root.ns-root Button {*/
 /*    margin: 3 10;*/

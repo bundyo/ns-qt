@@ -28,7 +28,7 @@
     "sass": "1.23.3",
     "webpack": "4.40.3",
     "webpack-bundle-analyzer": "3.6.0",
-    "webpack-cli": "3.3.10"
+    "webpack-cli": "3.3.12"
   },
   "gitHead": "1964ea9e8ca1a0518e0d6370781eedcf6c23db42",
   "readme": "NativeScript Application"

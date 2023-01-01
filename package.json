@@ -18,17 +18,17 @@
   },
   "devDependencies": {
     "nativescript-dev-webpack": "file:../nativescript-dev-webpack/",
-    "nativescript-worker-loader": "0.9.0",
+    "nativescript-worker-loader": "0.12.1",
     "clean-webpack-plugin": "1.0.0",
-    "copy-webpack-plugin": "4.6.0",
-    "css-loader": "3.2.0",
-    "file-loader": "4.2.0",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.3",
+    "file-loader": "6.2.0",
     "node-loader": "0.6.0",
-    "sass-loader": "8.0.0",
+    "sass-loader": "13.2.0",
     "sass": "1.23.3",
-    "webpack": "4.40.3",
+    "webpack": "5.75.0",
     "webpack-bundle-analyzer": "3.6.0",
-    "webpack-cli": "3.3.10"
+    "webpack-cli": "5.0.1"
   },
   "gitHead": "1964ea9e8ca1a0518e0d6370781eedcf6c23db42",
   "readme": "NativeScript Application"
